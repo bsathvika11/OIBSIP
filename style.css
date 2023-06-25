@@ -7,11 +7,12 @@
 html {
   scroll-behavior: smooth;
 }
-/*@media screen and (max-width: 620px) {
+@media screen and (max-width: 620px) {
   body {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     display: grid;
     flex-direction: column;
+    max-zoom: 50%;
   }
 }
 @media screen and (min-width: 620px) and (max-width: 1260px) {
@@ -20,7 +21,7 @@ html {
     display: grid;
     max-zoom: 50%;
   }
-}*/
+}
 h3 {
   font-weight: 900;
   margin-left: 5px;
