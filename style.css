@@ -3,23 +3,32 @@
   padding: 0;
   font-family: "Albert Sans", sans-serif;
   box-sizing: border-box;
-}
-html {
   scroll-behavior: smooth;
 }
+
 @media screen and (max-width: 620px) {
   body {
     font-size: 0.6rem;
     display: grid;
-    flex-direction: column;
-    max-zoom: 50%;
+    width: 100%;
+  }
+  .slider {
+    display: none;
+  }
+  html {
+    width: 1000px;
   }
 }
 @media screen and (min-width: 620px) and (max-width: 1260px) {
   body {
     font-size: 0.6rem;
     display: grid;
-    max-zoom: 50%;
+  }
+  .slider {
+    display: none;
+  }
+  html {
+    width: 1259px;
   }
 }
 h3 {
@@ -31,7 +40,7 @@ h3 {
   height: 60px;
   background-color: #ad8b73;
   color: rgb(255, 243, 226);
-
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,6 +157,81 @@ h3 {
   text-decoration: none;
   color: #ceab93;
 }
+.m1 {
+  width: 220px;
+  height: 350px;
+  left: 39px;
+  top: 36px;
+}
+
+.m2 {
+  width: 185px;
+  height: 300px;
+  left: 180px;
+  top: 201px;
+}
+
+.m3 {
+  width: 160px;
+  height: 230px;
+  left: 320px;
+  top: 130px;
+}
+.m4 {
+  width: 150px;
+  height: 250px;
+  right: 305px;
+  top: 280px;
+}
+.m5 {
+  width: 135px;
+  height: 250px;
+  right: 170px;
+  top: 170px;
+}
+.m6 {
+  width: 140px;
+  height: 230px;
+  right: 30px;
+  top: 40px;
+}
+@media screen and (max-width: 620px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+  .m1 {
+    width: 165px;
+    height: 260px;
+  }
+  .m2 {
+    width: 135px;
+    height: 230px;
+    left: 150px;
+  }
+  .m3 {
+    width: 125px;
+    height: 170px;
+    left: 250px;
+  }
+  .head1 {
+    left: 390px;
+  }
+  .m4 {
+    width: 120px;
+    height: 200px;
+    right: 225px;
+  }
+  .m5 {
+    width: 115px;
+    height: 195px;
+    right: 145px;
+    top: 154px;
+  }
+  .m6 {
+    width: 135px;
+    height: 205px;
+  }
+}
 .men {
   text-align: center;
   width: 150px;
@@ -179,6 +263,7 @@ h3 {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .offer {
   word-wrap: break-word;
   position: absolute;
@@ -188,6 +273,50 @@ h3 {
   top: 340px;
   color: #604001;
   font-weight: 500;
+}
+@media screen and (max-width: 620px) {
+  .men {
+    width: 100px;
+    padding-top: 8px;
+    left: 395px;
+    top: 255px;
+  }
+  .women {
+    width: 115px;
+    padding-top: 8px;
+    left: 505px;
+    top: 255px;
+  }
+  .offer {
+    left: 395px;
+    top: 295px;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 1260px) {
+  .head1 {
+    left: 515px;
+  }
+  .men {
+    width: 100px;
+    height: 29px;
+    padding-top: 9px;
+    left: 516px;
+    top: 255px;
+  }
+  .women {
+    width: 120px;
+    height: 29px;
+    padding-top: 8px;
+    left: 630px;
+    top: 255px;
+  }
+  .offer {
+    left: 515px;
+    top: 300px;
+  }
+  .hero-text {
+    font-size: 1.8rem;
+  }
 }
 .head1 h2 {
   font-size: 2rem;
